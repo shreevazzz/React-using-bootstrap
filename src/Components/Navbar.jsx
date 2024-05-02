@@ -1,35 +1,38 @@
+import './Navbar.css'
 const Navbar = ({setCategory}) => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#"><span className="badge bg-light text-dark fs-4 ">News Mag</span></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            
-            <li className="nav-item">
+          <ul className="navbar-nav w-100 justify-content-between">
+
+            <li className="nav-item mr-auto pl-2">
               <div className="nav-link" onClick={()=>setCategory("technology")}>Technology</div>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item ">
               <div className="nav-link" onClick={()=>setCategory("business")}>Business</div>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item ">
               <div className="nav-link" onClick={()=>setCategory("health")}>Health</div>
             </li>
 
-            <li className="nav-item">
+            <a className="navbar-brand" href="#"><span className="badge bg-danger text-light fs-3 ">News Magazine</span></a>
+
+
+            <li className="nav-item ">
               <div className="nav-link" onClick={()=>setCategory("science")}>Science</div>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item ">
               <div className="nav-link" onClick={()=>setCategory("sports")}>Sports</div>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item ml-auto pr-2">
               <div className="nav-link" onClick={()=>setCategory("entertainment")}>Entertainment</div>
             </li>
 
@@ -38,7 +41,6 @@ const Navbar = ({setCategory}) => {
       </div>
     </nav>
   )
- 
 }
 
 export default Navbar

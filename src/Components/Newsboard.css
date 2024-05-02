@@ -1,0 +1,19 @@
+.newsboard {
+    background-color: grey;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .newsitem {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-bottom: 2rem;
+  }
